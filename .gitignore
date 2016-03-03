@@ -3,3 +3,6 @@
 .idea
 node_modules
 xpedytor.iml
+.gradle
+/xpedytor-services/build
+/classes

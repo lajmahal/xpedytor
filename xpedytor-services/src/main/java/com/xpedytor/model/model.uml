@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="0.0">com.xpedytor.model.OrderStatus</node>
+    <node x="20.0" y="158.0">com.xpedytor.model.Table</node>
+    <node x="19.5" y="79.0">com.xpedytor.model.Order</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.xpedytor.model.Order" target="com.xpedytor.model.OrderStatus">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xpedytor.model.Table" target="com.xpedytor.model.Order">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="53.0" y="94.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
