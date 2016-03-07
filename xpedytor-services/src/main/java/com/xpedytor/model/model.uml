@@ -3,24 +3,27 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="0.0">com.xpedytor.model.OrderStatus</node>
-    <node x="20.0" y="158.0">com.xpedytor.model.Table</node>
-    <node x="19.5" y="79.0">com.xpedytor.model.Order</node>
+    <node x="0.0" y="202.0">com.xpedytor.model.Table</node>
+    <node x="57.5" y="0.0">com.xpedytor.model.OrderStatus</node>
+    <node x="16.0" y="79.0">com.xpedytor.model.Order</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.xpedytor.model.Order" target="com.xpedytor.model.OrderStatus">
-      <point x="0.0" y="0.0" />
-      <point x="0.0" y="0.0" />
+      <point x="0.0" y="-36.5" />
+      <point x="0.0" y="14.5" />
     </edge>
     <edge source="com.xpedytor.model.Table" target="com.xpedytor.model.Order">
-      <point x="0.0" y="0.0" />
-      <point x="0.0" y="0.0" />
+      <point x="0.0" y="-80.5" />
+      <point x="0.0" y="36.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="53.0" y="94.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="110.5" y="181.5" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>
