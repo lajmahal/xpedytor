@@ -6,6 +6,11 @@ repositories {
 }
 
 dependencies {
+    // logging
+    compile 'org.slf4j:slf4j-api:1.7.18'
+    runtime 'org.slf4j:slf4j-log4j12:1.7.18'
+
+    // jersey
     compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.14'
     compile 'org.glassfish.jersey.media:jersey-media-moxy:2.14'
 

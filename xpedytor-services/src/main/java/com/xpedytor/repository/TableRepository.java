@@ -3,6 +3,8 @@ package com.xpedytor.repository;
 import com.xpedytor.model.Order;
 import com.xpedytor.model.OrderStatus;
 import com.xpedytor.model.Table;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +13,13 @@ import java.util.List;
  * Created by laj on 3/3/16.
  */
 public class TableRepository implements ITableRepository {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(TableRepository.class);
+
     @Override
     public List<Table> findAllTables() {
+        LOGGER.info("Finding all tables");
+
         List<Table> tables = new ArrayList<Table>();
 
         Table table1 = new Table();
@@ -50,6 +57,8 @@ public class TableRepository implements ITableRepository {
 
     @Override
     public Table findTable(int tableNumber) {
+        LOGGER.info(String.format("Finding table number [%d]", tableNumber));
+
         // TODO not implemented yet
         return null;
     }
