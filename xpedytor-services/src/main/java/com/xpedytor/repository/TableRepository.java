@@ -59,7 +59,13 @@ public class TableRepository implements ITableRepository {
     public Table findTable(int tableNumber) {
         LOGGER.info(String.format("Finding table number [%d]", tableNumber));
 
-        // TODO not implemented yet
-        return null;
+        Table table1 = new Table();
+        table1.setNumber(1);
+        table1.setSeats(4);
+        table1.setAdultCustomers(0);
+        table1.setChildrenCustomers(0);
+        table1.setOccupied(false);
+
+        return table1;
     }
 }

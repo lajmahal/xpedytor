@@ -29,6 +29,6 @@ public class TableRepositoryTest {
 
     @Test
     public void test_findTable() {
-        assertNull(tableRepository.findTable(1)); // TODO not implemented yet
+        assertEquals(1, tableRepository.findTable(1).getNumber());
     }
 }

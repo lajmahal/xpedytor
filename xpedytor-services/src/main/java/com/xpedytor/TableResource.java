@@ -6,6 +6,7 @@ import com.xpedytor.repository.TableRepository;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
@@ -21,5 +22,12 @@ public class TableResource {
     @Produces(MediaType.APPLICATION_JSON)
     public List<Table> getAllTables() {
         return tableRepository.findAllTables();
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("{tableNumber}")
+    public Table getTable(@PathParam("tableNumber") int tableNumber) {
+        return tableRepository.findTable(tableNumber);
     }
 }
