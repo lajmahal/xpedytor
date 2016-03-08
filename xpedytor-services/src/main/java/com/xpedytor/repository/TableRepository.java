@@ -66,6 +66,11 @@ public class TableRepository implements ITableRepository {
         table1.setChildrenCustomers(0);
         table1.setOccupied(false);
 
-        return table1;
+        if (tableNumber == 1) {
+            return table1;
+        }
+        else {
+            return null;
+        }
     }
 }

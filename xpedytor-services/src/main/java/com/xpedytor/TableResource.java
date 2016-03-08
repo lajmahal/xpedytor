@@ -11,6 +11,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
@@ -34,9 +35,21 @@ public class TableResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{tableNumber}")
-    public Table getTable(@PathParam("tableNumber") int tableNumber) {
+    public Response getTable(@PathParam("tableNumber") int tableNumber) {
         LOGGER.info(String.format("Getting table number [%d]", tableNumber));
 
-        return tableRepository.findTable(tableNumber);
+        if (tableNumber < 1) {
+            LOGGER.error(String.format("[%d] is an invalid table number", tableNumber));
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
+
+        Table t = tableRepository.findTable(tableNumber);
+
+        if (t == null) {
+            LOGGER.error(String.format("Table number [%d] not found", tableNumber));
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.ok().entity(t).build();
     }
 }
