@@ -10,6 +10,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
@@ -35,7 +36,10 @@ public class OrderResource {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
 
-        return Response.ok().entity(orders).build();
+        GenericEntity<List<Order>> entity = new GenericEntity<List<Order>>(orders) {
+        };
+
+        return Response.ok().entity(entity).build();
     }
 
     @GET
