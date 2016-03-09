@@ -3,6 +3,7 @@ package com.xpedytor;
 import com.xpedytor.model.Table;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.ws.rs.core.Response;
@@ -30,9 +31,15 @@ public class TableResourceTest {
 
     @Test
     public void test_getAllTables() {
-        List<Table> tables = resource.getAllTables();
+        List<Table> tables = (List<Table>) resource.getAllTables().getEntity();
         assertNotNull(tables);
         assertEquals(2, tables.size());
+    }
+
+    @Test @Ignore
+    public void test_getAllTablesNotFound() {
+        // TODO implement this
+        // once wired up to a database, clear out all table objects and attempt to get all tables
     }
 
     @Test

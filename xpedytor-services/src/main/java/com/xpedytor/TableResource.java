@@ -26,10 +26,17 @@ public class TableResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Table> getAllTables() {
+    public Response getAllTables() {
         LOGGER.info("Getting all tables...");
 
-        return tableRepository.findAllTables();
+        List<Table> tables = tableRepository.findAllTables();
+
+        if (tables == null || tables.isEmpty()) {
+            LOGGER.error("No tables found!");
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.ok().entity(tables).build();
     }
 
     @GET
