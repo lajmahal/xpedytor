@@ -1,10 +1,12 @@
-package com.xpedytor.repository;
+package com.xpedytor.repository.impl;
 
+import com.xpedytor.repository.ITableRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by chakushy on 7/3/16.
