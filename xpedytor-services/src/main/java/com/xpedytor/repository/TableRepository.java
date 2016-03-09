@@ -18,6 +18,8 @@ public class TableRepository implements ITableRepository {
 
     @Override
     public List<Table> findAllTables() {
+        // TODO source these from a MongoDB instance instead
+
         LOGGER.info("Finding all tables");
 
         List<Table> tables = new ArrayList<Table>();
@@ -57,6 +59,8 @@ public class TableRepository implements ITableRepository {
 
     @Override
     public Table findTable(int tableNumber) {
+        // TODO source these from a MongoDB instance instead
+
         LOGGER.info(String.format("Finding table number [%d]", tableNumber));
 
         Table table1 = new Table();
@@ -66,6 +70,11 @@ public class TableRepository implements ITableRepository {
         table1.setChildrenCustomers(0);
         table1.setOccupied(false);
 
-        return table1;
+        if (tableNumber == 1) {
+            return table1;
+        }
+        else {
+            return null;
+        }
     }
 }

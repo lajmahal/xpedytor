@@ -11,6 +11,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
@@ -25,18 +26,36 @@ public class OrderResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Order> getAllOrders() {
+    public Response getAllOrders() {
         LOGGER.info("Getting all orders...");
 
-        return orderRepository.findAllOrders();
+        List<Order> orders = orderRepository.findAllOrders();
+
+        if (orders == null || orders.isEmpty()) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.ok().entity(orders).build();
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{orderId}")
-    public Order getOrder(@PathParam("orderId") Long orderId) {
+    public Response getOrder(@PathParam("orderId") Long orderId) {
         LOGGER.info(String.format("Getting order ID [%d]", orderId));
 
-        return orderRepository.findOrder(orderId);
+        if (orderId <= 0) {
+            LOGGER.error(String.format("Order ID of [%d] is invalid", orderId));
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
+
+        Order order = orderRepository.findOrder(orderId);
+
+        if (order == null) {
+            LOGGER.error(String.format("Order ID [%d] not found", orderId));
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.ok().entity(order).build();
     }
 }
