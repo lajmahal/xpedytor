@@ -1,8 +1,9 @@
-package com.xpedytor.repository;
+package com.xpedytor.repository.impl;
 
 import com.xpedytor.model.Order;
 import com.xpedytor.model.OrderStatus;
 import com.xpedytor.model.Table;
+import com.xpedytor.repository.ITableRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

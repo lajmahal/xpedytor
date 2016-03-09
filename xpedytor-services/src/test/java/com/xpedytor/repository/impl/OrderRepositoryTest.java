@@ -1,4 +1,4 @@
-package com.xpedytor.repository;
+package com.xpedytor.repository.impl;
 
 import com.xpedytor.model.Order;
 import org.junit.Before;
@@ -6,9 +6,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by chakushy on 3/7/16.
