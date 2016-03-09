@@ -45,6 +45,10 @@ public class OrderRepository implements IOrderRepository {
         order.setId(1L);
         order.setStatus(OrderStatus.PENDING);
 
-        return order;
+        if (orderId == 1L) {
+            return order;
+        } else {
+            return null;
+        }
     }
 }
