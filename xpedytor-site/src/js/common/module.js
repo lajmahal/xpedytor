@@ -3,10 +3,14 @@
  */
 'use strict';
 
-var dependencies = ['common/defs/module-defs'];
+var dependencies =
+    [
+        'angular',
+        'common/defs/module-defs'
+    ];
 
 define(dependencies, function () {
     var commonModule = angular.module('com.xpedytor.modules.common', []);
 
-    commonModule.run([initializeCommonModule]);
+    commonModule.run(['$log', initializeCommonModule]);
 });

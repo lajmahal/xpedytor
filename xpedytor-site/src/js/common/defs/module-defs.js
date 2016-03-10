@@ -3,6 +3,9 @@
  */
 'use strict';
 
-function initializeCommonModule() {
-    console.log('Common Module initialized!');
+function initializeCommonModule(logService) {
+    var validation = logService;
+    if (validation) {
+        logService.info('Common Module initialized!');
+    }
 }
