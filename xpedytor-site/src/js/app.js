@@ -6,12 +6,16 @@
 var dependencies =
     [
         'angular',
+        'common/module',
         'defs/app-defs'
     ];
 
 define(dependencies,
     function () {
-        var appModule= angular.module('com.xpedytor.app', []);
+        var appModule = angular.module('com.xpedytor.app',
+            [
+                'com.xpedytor.modules.common'
+            ]);
 
         appModule.run(
             [
