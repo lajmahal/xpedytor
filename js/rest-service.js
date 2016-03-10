@@ -42,7 +42,7 @@ app.use(function (error, request, response, next) {
 });
 
 app.use(bodyparser.json());
-app.use('/', express.static(__dirname + "/../xpedytor-site/"));
+app.use('/', express.static(__dirname + "/../"));
 
 server.listen(portNumber);
 
