@@ -9,7 +9,7 @@ console.log('Inside require-main.js');
 require.config({
     baseUrl: 'js',
     paths: {
-        'angular': '../../../node_modules/angular/angular.min'
+        'angular': '../../../js/lib/angular/angular.min'
     },
     shim: {
         'angular': {

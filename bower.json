@@ -1,0 +1,26 @@
+{
+  "name": "xpedytor",
+  "description": "The Xpedytor app",
+  "main": "",
+  "authors": [
+    "lajmahal <laj.lal@outlook.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "xpedytor"
+  ],
+  "homepage": "https://github.com/lajmahal/xpedytor",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "requirejs": "^2.1.22"
+  }
+}
