@@ -21,24 +21,17 @@ define(dependencies, function () {
             commonHeaderDirective
         ]);
 
-    function commonHeaderDirective(templateUrls, scope, controller) {
-        var directiveDefinition = {
-            restrict: 'EA'
-        };
+    function commonHeaderDirective(templateUrls) {
 
-        if (templateUrls && templateUrls.header) {
-            directiveDefinition.templateUrl = function () {
+        var directiveDefinition = {
+            restrict: 'EA',
+            scope: {
+                headerTitle: '@'
+            },
+            templateUrl: function () {
                 return templateUrls.header;
             }
-        }
-
-        if (scope) {
-            directiveDefinition.scope = scope;
-        }
-
-        if (controller) {
-            directiveDefinition.controller = controller;
-        }
+        };
 
         return directiveDefinition;
     }
