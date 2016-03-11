@@ -6,11 +6,15 @@
 var dependencies =
     [
         'angular',
-        'common/defs/module-defs'
+        'common/defs/module-defs',
+        'common/directives'
     ];
 
 define(dependencies, function () {
-    var commonModule = angular.module('com.xpedytor.modules.common', []);
+    var commonModule = angular.module('com.xpedytor.modules.common',
+        [
+            'com.xpedytor.modules.common.directives'
+        ]);
 
     commonModule.run(['$log', initializeCommonModule]);
 });
