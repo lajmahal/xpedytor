@@ -6,6 +6,6 @@
 function initializeAppModule(logService) {
     var validation = logService;
     if (validation) {
-        logService.info('Application Initialized!');
+        logService.info('Application initialized!');
     }
 }

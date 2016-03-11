@@ -6,7 +6,8 @@
 var dependencies =
     [
         'angular',
-        'common/config'
+        'common/config',
+        'common/defs/directive-defs'
     ];
 
 define(dependencies, function () {
@@ -15,24 +16,18 @@ define(dependencies, function () {
             'com.xpedytor.modules.common.config'
         ]);
 
+    // initialize
+    commonDirectivesModule.run(
+        [
+            '$log',
+            initializeCommonDirectivesModule
+        ]
+    );
+
+    // set up directives
     commonDirectivesModule.directive('commonHeader',
         [
             'commonDirectivesTemplateURLs',
             commonHeaderDirective
         ]);
-
-    function commonHeaderDirective(templateUrls) {
-
-        var directiveDefinition = {
-            restrict: 'EA',
-            scope: {
-                headerTitle: '@'
-            },
-            templateUrl: function () {
-                return templateUrls.header;
-            }
-        };
-
-        return directiveDefinition;
-    }
 });
