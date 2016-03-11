@@ -7,3 +7,4 @@ xpedytor.iml
 .gradle
 /xpedytor-services/build
 /classes
+/js/lib
