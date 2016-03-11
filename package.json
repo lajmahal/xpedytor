@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "xpedytor",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "The Xpedytor app",
+  "repository": "https://github.com/lajmahal/xpedytor",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "*",
@@ -39,8 +39,4 @@
     "protractor": "protractor e2e-tests/protractor.conf.js",
     "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
   },
-  "dependencies": {
-    "angular": "^1.5.0",
-    "requirejs": "^2.1.22"
-  }
 }
