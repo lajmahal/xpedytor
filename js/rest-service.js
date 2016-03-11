@@ -10,7 +10,7 @@ var sio = require('socket.io');
 var portNumber = process.env.PORT_NUMBER || 9090;
 var hostName = os.hostname();
 var message = util.format(
-    'REST Service available at http://%s:%d/src/',
+    'REST Service available at http://%s:%d/xpedytor-site/src/',
     hostName, portNumber);
 
 var app = new express();
