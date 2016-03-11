@@ -6,6 +6,7 @@
 var dependencies =
     [
         'angular',
+        'ngResource',
         'common/config',
         'common/defs/service-defs'
     ];
@@ -14,6 +15,7 @@ define(dependencies, function () {
 
     var commonServicesModule = angular.module('com.xpedytor.modules.common.services',
         [
+            'ngResource',
             'com.xpedytor.modules.common.config'
         ]);
 

@@ -18,4 +18,9 @@ define(dependencies, function () {
         baseURL: 'http://localhost:8080/webapi',
         tablesService: '/tables'
     });
+
+    // constants for common view partial template URLs
+    commonConfigModule.constant('xpdCommonViewTemplateURLs', {
+        tables: 'js/common/partials/views/tables.html'
+    });
 });
