@@ -12,4 +12,10 @@ define(dependencies, function () {
     commonConfigModule.constant('xpdCommonDirectivesTemplateURLs', {
         header: 'js/common/partials/directives/header.html'
     });
+
+    // constants for common service URLs
+    commonConfigModule.constant('xpdCommonServiceURLs', {
+        baseURL: 'http://localhost:8080/webapi',
+        tablesService: '/tables'
+    });
 });
