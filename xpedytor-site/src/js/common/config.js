@@ -9,7 +9,7 @@ define(dependencies, function () {
     var commonConfigModule = angular.module('com.xpedytor.modules.common.config', []);
 
     // constant for common directive partial templates
-    commonConfigModule.constant('commonDirectivesTemplateURLs', {
+    commonConfigModule.constant('xpdCommonDirectivesTemplateURLs', {
         header: 'js/common/partials/directives/header.html'
     });
 });

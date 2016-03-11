@@ -25,9 +25,9 @@ define(dependencies, function () {
     );
 
     // set up directives
-    commonDirectivesModule.directive('commonHeader',
+    commonDirectivesModule.directive('xpdCommonHeader',
         [
-            'commonDirectivesTemplateURLs',
-            commonHeaderDirective
+            'xpdCommonDirectivesTemplateURLs',
+            xpdCommonHeaderDirective
         ]);
 });

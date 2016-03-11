@@ -9,7 +9,7 @@ function initializeCommonDirectivesModule(logService) {
     }
 }
 
-function commonHeaderDirective(templateUrls) {
+function xpdCommonHeaderDirective(templateUrls) {
 
     var directiveDefinition = {
         restrict: 'EA',
