@@ -1,0 +1,5 @@
+/* Move down content because we have a fixed navbar at the top */
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
