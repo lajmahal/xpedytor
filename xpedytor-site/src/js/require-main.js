@@ -11,7 +11,9 @@ require.config({
     paths: {
         'angular': '../../../js/lib/angular/angular.min',
         'uiRouter': '../../../js/lib/angular-ui-router/release/angular-ui-router.min',
-        'ngResource': '../../../js/lib/angular-resource/angular-resource.min'
+        'ngResource': '../../../js/lib/angular-resource/angular-resource.min',
+        'jquery': '../../../js/lib/jquery/dist/jquery.min',
+        'bootstrap': '../../../js/lib/bootstrap/dist/js/bootstrap.min'
     },
     shim: {
         'angular': {
@@ -25,8 +27,15 @@ require.config({
             depends: ['angular'],
             export: 'ngResource'
         },
+        'jquery': {
+            export: 'jquery'
+        },
+        'bootstrap': {
+            depends: ['jquery'],
+            export: 'bootstrap'
+        },
         'app': {
-            depends: ['angular', 'uiRouter'],
+            depends: ['angular', 'uiRouter', 'bootstrap'],
             export: 'app'
         }
     },
