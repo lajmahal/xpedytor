@@ -29,5 +29,13 @@ define(dependencies, function () {
         [
             'xpdCommonDirectivesTemplateURLs',
             xpdCommonHeaderDirective
-        ]);
+        ]
+    );
+
+    commonDirectivesModule.directive('xpdCommonFooter',
+        [
+            'xpdCommonDirectivesTemplateURLs',
+            xpdCommonFooterDirective
+        ]
+    );
 });

@@ -10,7 +10,8 @@ define(dependencies, function () {
 
     // constant for common directive partial templates
     commonConfigModule.constant('xpdCommonDirectivesTemplateURLs', {
-        header: 'js/common/partials/directives/header.html'
+        header: 'js/common/partials/directives/header.html',
+        footer: 'js/common/partials/directives/footer.html'
     });
 
     // constants for common service URLs

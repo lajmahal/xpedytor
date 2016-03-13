@@ -23,3 +23,16 @@ function xpdCommonHeaderDirective(templateUrls) {
 
     return directiveDefinition;
 }
+
+function xpdCommonFooterDirective(templateUrls) {
+
+    var directiveDefinition = {
+        restrict: 'E',
+        templateUrl: function () {
+            return templateUrls.footer;
+        }
+    };
+
+    return directiveDefinition;
+
+}
