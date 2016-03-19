@@ -1,6 +1,9 @@
 /**
  * Created by chakushy on 3/11/16.
  */
+/*global
+ initializeCommonServicesModule, xpdTablesService
+ */
 'use strict';
 
 var dependencies =

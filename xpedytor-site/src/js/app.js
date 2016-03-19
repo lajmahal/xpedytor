@@ -1,6 +1,9 @@
 /**
  * Created by laj on 2/28/16.
  */
+/*global
+ initializeAppModule
+ */
 'use strict';
 
 var dependencies =

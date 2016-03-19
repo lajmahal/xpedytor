@@ -1,6 +1,9 @@
 /**
  * Created by chakushy on 3/10/16.
  */
+/*global
+ initializeCommonModule
+ */
 'use strict';
 
 var dependencies =

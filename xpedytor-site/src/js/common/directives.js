@@ -1,6 +1,9 @@
 /**
  * Created by chakushy on 3/11/16.
  */
+/*global
+ initializeCommonDirectivesModule, xpdCommonHeaderDirective, xpdCommonFooterDirective
+ */
 'use strict';
 
 var dependencies =
