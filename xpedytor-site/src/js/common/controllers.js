@@ -1,6 +1,9 @@
 /**
  * Created by chakushy on 3/11/16.
  */
+/*global
+ initializeCommonControllersModule, xpdTablesViewController
+ */
 'use strict';
 
 var dependencies =

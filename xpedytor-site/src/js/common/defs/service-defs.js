@@ -5,7 +5,7 @@
 
 // initialize the module - implementation
 function initializeCommonServicesModule(logService) {
-    logService.info("Common Services Module initialized!");
+    logService.info('Common Services Module initialized!');
 }
 
 // tables service - implentation

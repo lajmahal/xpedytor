@@ -5,7 +5,7 @@
 
 function initializeCommonDirectivesModule(logService) {
     if (logService) {
-        logService.info("Common Directives Module initialized!");
+        logService.info('Common Directives Module initialized!');
     }
 }
 

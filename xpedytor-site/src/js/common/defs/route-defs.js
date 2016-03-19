@@ -6,7 +6,7 @@
 // initialize module - implementation
 function initializeCommonRoutesModule(logService) {
     if (logService) {
-        logService.info("Common Routes Module initialized!");
+        logService.info('Common Routes Module initialized!');
     }
 }
 

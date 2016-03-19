@@ -1,6 +1,9 @@
 /**
  * Created by chakushy on 3/11/16.
  */
+/*global
+ initializeCommonRoutesModule, configureCommonRouter
+ */
 'use strict';
 
 var dependencies =

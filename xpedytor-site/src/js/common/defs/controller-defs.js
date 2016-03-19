@@ -6,7 +6,7 @@
 // initialize the module - implementation
 function initializeCommonControllersModule(logService) {
     if (logService) {
-        logService.info("Common Controllers Module initialized!");
+        logService.info('Common Controllers Module initialized!');
     }
 }
 
@@ -20,7 +20,7 @@ function xpdTablesViewController(viewModel, service) {
                 }
             },
             function (error) {
-                viewModel.errorMessage = "Error occurred, details: " + JSON.stringify(error);
+                viewModel.errorMessage = 'Error occurred, details: ' + JSON.stringify(error);
 
                 throw error;
             }
