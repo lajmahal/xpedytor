@@ -14,13 +14,13 @@ import static org.junit.Assert.*;
 /**
  * Created by chakushy on 3/7/16.
  */
-public class OrderResourceTest {
+public class OrderResourceImplTest {
 
     private OrderResource resource;
 
     @Before
     public void setUp() {
-        resource = new OrderResource();
+        resource = new OrderResourceImpl();
     }
 
     @After
