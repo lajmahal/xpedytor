@@ -1,6 +1,6 @@
 package com.xpedytor.repository;
 
-import com.xpedytor.repository.impl.OrderRepository;
+import com.xpedytor.repository.impl.OrderRepositoryImpl;
 
 /**
  * Created by chakushy on 3/7/16.
@@ -8,7 +8,7 @@ import com.xpedytor.repository.impl.OrderRepository;
 public class OrderRepositoryFactory {
 
     public static IOrderRepository get() {
-        return new OrderRepository();
+        return new OrderRepositoryImpl();
     }
 
 }

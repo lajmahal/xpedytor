@@ -13,11 +13,11 @@ import static org.junit.Assert.*;
  */
 public class OrderRepositoryTest {
 
-    private OrderRepository orderRepository;
+    private OrderRepositoryImpl orderRepository;
 
     @Before
     public void setUp() {
-        orderRepository = new OrderRepository();
+        orderRepository = new OrderRepositoryImpl();
     }
 
     @Test

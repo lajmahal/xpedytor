@@ -15,9 +15,9 @@ import java.util.List;
 /**
  * Created by chakushy on 3/7/16.
  */
-public class OrderRepository implements IOrderRepository {
+public class OrderRepositoryImpl implements IOrderRepository {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(OrderRepository.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(OrderRepositoryImpl.class);
 
     private ITableRepository tableRepository = TableRepositoryFactory.get();
 
