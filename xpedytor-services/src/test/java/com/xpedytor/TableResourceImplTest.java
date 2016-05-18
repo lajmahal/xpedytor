@@ -15,13 +15,13 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Created by chakushy on 3/7/16.
  */
-public class TableResourceTest {
+public class TableResourceImplTest {
 
-    private TableResource resource;
+    private TableResourceImpl resource;
 
     @Before
     public void setUp() {
-        resource = new TableResource();
+        resource = new TableResourceImpl();
     }
 
     @After
