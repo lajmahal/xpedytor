@@ -7,7 +7,7 @@
     <node x="266.5" y="0.0">com.xpedytor.repository.ITableRepository</node>
     <node x="89.49999999999997" y="246.0">com.xpedytor.repository.OrderRepositoryFactory</node>
     <node x="61.49999999999997" y="123.0">com.xpedytor.repository.impl.OrderRepositoryImpl</node>
-    <node x="327.5" y="123.0">com.xpedytor.repository.impl.TableRepository</node>
+    <node x="327.5" y="123.0">com.xpedytor.repository.impl.TableRepositoryImpl</node>
     <node x="357.0" y="246.0">com.xpedytor.repository.TableRepositoryFactory</node>
   </nodes>
   <notes />
@@ -22,7 +22,7 @@
       <point x="327.5" y="98.0" />
       <point x="-61.0" y="36.5" />
     </edge>
-    <edge source="com.xpedytor.repository.impl.TableRepository" target="com.xpedytor.repository.ITableRepository">
+    <edge source="com.xpedytor.repository.impl.TableRepositoryImpl" target="com.xpedytor.repository.ITableRepository">
       <point x="0.0" y="-36.5" />
       <point x="61.0" y="36.5" />
     </edge>
@@ -30,7 +30,7 @@
       <point x="0.0" y="-25.5" />
       <point x="0.0" y="36.5" />
     </edge>
-    <edge source="com.xpedytor.repository.TableRepositoryFactory" target="com.xpedytor.repository.impl.TableRepository">
+    <edge source="com.xpedytor.repository.TableRepositoryFactory" target="com.xpedytor.repository.impl.TableRepositoryImpl">
       <point x="0.0" y="-25.5" />
       <point x="0.0" y="36.5" />
     </edge>

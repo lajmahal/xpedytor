@@ -13,9 +13,9 @@ import java.util.List;
 /**
  * Created by laj on 3/3/16.
  */
-public class TableRepository implements ITableRepository {
+public class TableRepositoryImpl implements ITableRepository {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(TableRepository.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TableRepositoryImpl.class);
 
     @Override
     public List<Table> findAllTables() {

@@ -16,7 +16,7 @@ public class TableRepositoryTest {
 
     @Before
     public void setUp() {
-        tableRepository = new TableRepository();
+        tableRepository = new TableRepositoryImpl();
     }
 
     @After
