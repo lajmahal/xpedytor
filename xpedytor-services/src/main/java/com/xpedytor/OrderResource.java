@@ -1,7 +1,7 @@
 package com.xpedytor;
 
 import com.xpedytor.model.Order;
-import com.xpedytor.repository.IOrderRepository;
+import com.xpedytor.repository.OrderRepository;
 import com.xpedytor.repository.OrderRepositoryFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +23,7 @@ public class OrderResource {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderResource.class);
 
-    private IOrderRepository orderRepository = OrderRepositoryFactory.get();
+    private OrderRepository orderRepository = OrderRepositoryFactory.get();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

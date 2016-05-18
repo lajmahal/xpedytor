@@ -3,7 +3,7 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="0.0">com.xpedytor.repository.IOrderRepository</node>
+    <node x="0.0" y="0.0">com.xpedytor.repository.OrderRepository</node>
     <node x="266.5" y="0.0">com.xpedytor.repository.ITableRepository</node>
     <node x="89.49999999999997" y="246.0">com.xpedytor.repository.OrderRepositoryFactory</node>
     <node x="61.49999999999997" y="123.0">com.xpedytor.repository.impl.OrderRepositoryImpl</node>
@@ -12,7 +12,7 @@
   </nodes>
   <notes />
   <edges>
-    <edge source="com.xpedytor.repository.impl.OrderRepositoryImpl" target="com.xpedytor.repository.IOrderRepository">
+    <edge source="com.xpedytor.repository.impl.OrderRepositoryImpl" target="com.xpedytor.repository.OrderRepository">
       <point x="-61.5" y="-36.5" />
       <point x="0.0" y="36.5" />
     </edge>

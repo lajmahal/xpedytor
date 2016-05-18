@@ -7,7 +7,7 @@ import com.xpedytor.repository.impl.OrderRepositoryImpl;
  */
 public class OrderRepositoryFactory {
 
-    public static IOrderRepository get() {
+    public static OrderRepository get() {
         return new OrderRepositoryImpl();
     }
 
