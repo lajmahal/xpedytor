@@ -3,7 +3,7 @@ package com.xpedytor.repository.impl;
 import com.xpedytor.model.Order;
 import com.xpedytor.model.OrderStatus;
 import com.xpedytor.model.Table;
-import com.xpedytor.repository.ITableRepository;
+import com.xpedytor.repository.TableRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by laj on 3/3/16.
  */
-public class TableRepositoryImpl implements ITableRepository {
+public class TableRepositoryImpl implements TableRepository {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TableRepositoryImpl.class);
 

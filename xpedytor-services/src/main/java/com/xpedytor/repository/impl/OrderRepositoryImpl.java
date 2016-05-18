@@ -3,8 +3,8 @@ package com.xpedytor.repository.impl;
 import com.xpedytor.model.Order;
 import com.xpedytor.model.OrderStatus;
 import com.xpedytor.model.Table;
-import com.xpedytor.repository.ITableRepository;
 import com.xpedytor.repository.OrderRepository;
+import com.xpedytor.repository.TableRepository;
 import com.xpedytor.repository.TableRepositoryFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ public class OrderRepositoryImpl implements OrderRepository {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderRepositoryImpl.class);
 
-    private ITableRepository tableRepository = TableRepositoryFactory.get();
+    private TableRepository tableRepository = TableRepositoryFactory.get();
 
     @Override
     public List<Order> findAllOrders() {

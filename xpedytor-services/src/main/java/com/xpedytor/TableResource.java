@@ -1,7 +1,7 @@
 package com.xpedytor;
 
 import com.xpedytor.model.Table;
-import com.xpedytor.repository.ITableRepository;
+import com.xpedytor.repository.TableRepository;
 import com.xpedytor.repository.TableRepositoryFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +23,7 @@ public class TableResource {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TableResource.class);
 
-    private ITableRepository tableRepository = TableRepositoryFactory.get();
+    private TableRepository tableRepository = TableRepositoryFactory.get();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

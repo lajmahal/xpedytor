@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by laj on 3/3/16.
  */
-public interface ITableRepository {
+public interface TableRepository {
 
     List<Table> findAllTables();
 

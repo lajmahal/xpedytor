@@ -1,6 +1,6 @@
 package com.xpedytor.repository.impl;
 
-import com.xpedytor.repository.ITableRepository;
+import com.xpedytor.repository.TableRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +12,7 @@ import static org.junit.Assert.assertNotNull;
  * Created by chakushy on 7/3/16.
  */
 public class TableRepositoryTest {
-    private ITableRepository tableRepository;
+    private TableRepository tableRepository;
 
     @Before
     public void setUp() {
