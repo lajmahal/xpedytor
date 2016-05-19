@@ -31,6 +31,6 @@ public class TableRepositoryTest {
 
     @Test
     public void test_findTable() {
-        assertEquals(1, tableRepository.findTable(1).getNumber());
+        assertEquals(1, tableRepository.findTable(1).getTableNumber());
     }
 }

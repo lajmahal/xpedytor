@@ -8,19 +8,19 @@ import java.util.List;
  */
 @XmlRootElement
 public class Table {
-    private int number;
+    private int tableNumber;
     private int seats;
     private boolean occupied;
     private int adultCustomers;
     private int childrenCustomers;
     private List<Order> orders;
 
-    public int getNumber() {
-        return number;
+    public int getTableNumber() {
+        return tableNumber;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setTableNumber(int tableNumber) {
+        this.tableNumber = tableNumber;
     }
 
     public int getSeats() {

@@ -51,7 +51,7 @@ public class TableResourceImplTest {
 
         Table table = (Table) res.getEntity();
         assertNotNull(table);
-        assertEquals(1, table.getNumber());
+        assertEquals(1, table.getTableNumber());
     }
 
     @Test

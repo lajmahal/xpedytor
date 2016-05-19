@@ -26,7 +26,7 @@ public class TableRepositoryImpl implements TableRepository {
         List<Table> tables = new ArrayList<Table>();
 
         Table table1 = new Table();
-        table1.setNumber(1);
+        table1.setTableNumber(1);
         table1.setSeats(4);
         table1.setAdultCustomers(2);
         table1.setChildrenCustomers(2);
@@ -41,7 +41,7 @@ public class TableRepositoryImpl implements TableRepository {
         tables.add(table1);
 
         Table table2 = new Table();
-        table2.setNumber(2);
+        table2.setTableNumber(2);
         table2.setSeats(2);
         table2.setAdultCustomers(2);
         table2.setChildrenCustomers(0);
@@ -65,7 +65,7 @@ public class TableRepositoryImpl implements TableRepository {
         LOGGER.info(String.format("Finding table number [%d]", tableNumber));
 
         Table table1 = new Table();
-        table1.setNumber(1);
+        table1.setTableNumber(1);
         table1.setSeats(4);
         table1.setAdultCustomers(0);
         table1.setChildrenCustomers(0);
