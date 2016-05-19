@@ -1,4 +1,4 @@
-package com.xpedytor;
+package com.xpedytor.resource;
 
 import com.xpedytor.model.Table;
 import org.junit.After;

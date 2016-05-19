@@ -1,4 +1,4 @@
-package com.xpedytor;
+package com.xpedytor.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,13 +10,13 @@ import javax.ws.rs.core.Response;
 /**
  * Created by chakushy on 5/18/16.
  */
-public interface OrderResource {
+public interface TableResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    Response getAllOrders();
+    Response getAllTables();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("{orderId}")
-    Response getOrder(@PathParam("orderId") Long orderId);
+    @Path("{tableNumber}")
+    Response getTable(@PathParam("tableNumber") int tableNumber);
 }
