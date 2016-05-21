@@ -5,12 +5,12 @@
   <nodes>
     <node x="186.8888888888889" y="0.0">com.xpedytor.model.OrderStatus</node>
     <node x="0.0" y="202.0">com.xpedytor.model.Table</node>
-    <node x="598.5555555555555" y="246.0">com.xpedytor.repository.IOrderRepository</node>
+    <node x="598.5555555555555" y="246.0">com.xpedytor.repository.OrderRepository</node>
     <node x="145.3888888888889" y="79.0">com.xpedytor.model.Order</node>
-    <node x="334.5555555555556" y="246.0">com.xpedytor.repository.ITableRepository</node>
+    <node x="334.5555555555556" y="246.0">com.xpedytor.repository.TableRepository</node>
     <node x="635.6805555555555" y="537.0">com.xpedytor.repository.OrderRepositoryFactory</node>
     <node x="607.6805555555555" y="413.5">com.xpedytor.repository.OrderRepository</node>
-    <node x="362.0555555555556" y="413.0">com.xpedytor.TableResource</node>
+    <node x="362.0555555555556" y="413.0">com.xpedytor.resource.impl.TableResourceImpl</node>
     <node x="127.5555555555556" y="537.0">com.xpedytor.repository.TableRepositoryFactory</node>
     <node x="98.0555555555556" y="413.5">com.xpedytor.repository.TableRepository</node>
   </nodes>
@@ -42,19 +42,19 @@
       <point x="0.0" y="-36.5" />
       <point x="0.0" y="14.5" />
     </edge>
-    <edge source="com.xpedytor.repository.OrderRepository" target="com.xpedytor.repository.ITableRepository">
+    <edge source="com.xpedytor.repository.OrderRepository" target="com.xpedytor.repository.TableRepository">
       <point x="-82.0" y="-36.5" />
       <point x="648.6805555555555" y="388.0" />
       <point x="537.8888888888889" y="388.0" />
       <point x="81.33333333333331" y="36.5" />
     </edge>
-    <edge source="com.xpedytor.repository.TableRepository" target="com.xpedytor.repository.ITableRepository">
+    <edge source="com.xpedytor.repository.TableRepository" target="com.xpedytor.repository.TableRepository">
       <point x="81.33333333333331" y="-36.5" />
       <point x="301.3888888888889" y="388.0" />
       <point x="375.2222222222223" y="388.0" />
       <point x="-81.33333333333331" y="36.5" />
     </edge>
-    <edge source="com.xpedytor.repository.OrderRepository" target="com.xpedytor.repository.IOrderRepository">
+    <edge source="com.xpedytor.repository.OrderRepository" target="com.xpedytor.repository.OrderRepository">
       <point x="0.0" y="-36.5" />
       <point x="730.6805555555555" y="388.0" />
       <point x="721.5555555555555" y="388.0" />
@@ -68,7 +68,7 @@
       <point x="302.8888888888889" y="177.0" />
       <point x="63.0" y="36.5" />
     </edge>
-    <edge source="com.xpedytor.TableResource" target="com.xpedytor.repository.ITableRepository">
+    <edge source="com.xpedytor.resource.impl.TableResourceImpl" target="com.xpedytor.repository.TableRepository">
       <point x="0.0" y="-37.0" />
       <point x="0.0" y="36.5" />
     </edge>

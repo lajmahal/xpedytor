@@ -1,8 +1,9 @@
-package com.xpedytor;
+package com.xpedytor.resource.impl;
 
 import com.xpedytor.model.Order;
-import com.xpedytor.repository.IOrderRepository;
+import com.xpedytor.repository.OrderRepository;
 import com.xpedytor.repository.OrderRepositoryFactory;
+import com.xpedytor.resource.OrderResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,12 +20,13 @@ import java.util.List;
  * Created by chakushy on 3/7/16.
  */
 @Path("orders")
-public class OrderResource {
+public class OrderResourceImpl implements OrderResource {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(OrderResource.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(OrderResourceImpl.class);
 
-    private IOrderRepository orderRepository = OrderRepositoryFactory.get();
+    private OrderRepository orderRepository = OrderRepositoryFactory.get();
 
+    @Override
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllOrders() {
@@ -42,6 +44,7 @@ public class OrderResource {
         return Response.ok().entity(entity).build();
     }
 
+    @Override
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{orderId}")

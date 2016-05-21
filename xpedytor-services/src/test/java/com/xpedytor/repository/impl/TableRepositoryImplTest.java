@@ -1,6 +1,6 @@
 package com.xpedytor.repository.impl;
 
-import com.xpedytor.repository.ITableRepository;
+import com.xpedytor.repository.TableRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,12 +11,12 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Created by chakushy on 7/3/16.
  */
-public class TableRepositoryTest {
-    private ITableRepository tableRepository;
+public class TableRepositoryImplTest {
+    private TableRepository tableRepository;
 
     @Before
     public void setUp() {
-        tableRepository = new TableRepository();
+        tableRepository = new TableRepositoryImpl();
     }
 
     @After
@@ -31,6 +31,6 @@ public class TableRepositoryTest {
 
     @Test
     public void test_findTable() {
-        assertEquals(1, tableRepository.findTable(1).getNumber());
+        assertEquals(1, tableRepository.findTable(1).getTableNumber());
     }
 }

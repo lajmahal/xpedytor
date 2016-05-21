@@ -3,7 +3,7 @@ package com.xpedytor.repository.impl;
 import com.xpedytor.model.Order;
 import com.xpedytor.model.OrderStatus;
 import com.xpedytor.model.Table;
-import com.xpedytor.repository.ITableRepository;
+import com.xpedytor.repository.TableRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,9 +13,9 @@ import java.util.List;
 /**
  * Created by laj on 3/3/16.
  */
-public class TableRepository implements ITableRepository {
+public class TableRepositoryImpl implements TableRepository {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(TableRepository.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TableRepositoryImpl.class);
 
     @Override
     public List<Table> findAllTables() {
@@ -26,7 +26,7 @@ public class TableRepository implements ITableRepository {
         List<Table> tables = new ArrayList<Table>();
 
         Table table1 = new Table();
-        table1.setNumber(1);
+        table1.setTableNumber(1);
         table1.setSeats(4);
         table1.setAdultCustomers(2);
         table1.setChildrenCustomers(2);
@@ -41,7 +41,7 @@ public class TableRepository implements ITableRepository {
         tables.add(table1);
 
         Table table2 = new Table();
-        table2.setNumber(2);
+        table2.setTableNumber(2);
         table2.setSeats(2);
         table2.setAdultCustomers(2);
         table2.setChildrenCustomers(0);
@@ -65,7 +65,7 @@ public class TableRepository implements ITableRepository {
         LOGGER.info(String.format("Finding table number [%d]", tableNumber));
 
         Table table1 = new Table();
-        table1.setNumber(1);
+        table1.setTableNumber(1);
         table1.setSeats(4);
         table1.setAdultCustomers(0);
         table1.setChildrenCustomers(0);

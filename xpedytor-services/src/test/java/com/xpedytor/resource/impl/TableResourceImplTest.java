@@ -1,9 +1,8 @@
-package com.xpedytor;
+package com.xpedytor.resource.impl;
 
 import com.xpedytor.model.Table;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.ws.rs.core.Response;
@@ -15,13 +14,13 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Created by chakushy on 3/7/16.
  */
-public class TableResourceTest {
+public class TableResourceImplTest {
 
-    private TableResource resource;
+    private TableResourceImpl resource;
 
     @Before
     public void setUp() {
-        resource = new TableResource();
+        resource = new TableResourceImpl();
     }
 
     @After
@@ -36,11 +35,7 @@ public class TableResourceTest {
         assertEquals(2, tables.size());
     }
 
-    @Test @Ignore
-    public void test_getAllTablesNotFound() {
-        // TODO implement this
-        // once wired up to a database, clear out all table objects and attempt to get all tables
-    }
+    // TODO implement a test that runs getAllTables and doesn't find anything
 
     @Test
     public void test_getTable() {
@@ -51,7 +46,7 @@ public class TableResourceTest {
 
         Table table = (Table) res.getEntity();
         assertNotNull(table);
-        assertEquals(1, table.getNumber());
+        assertEquals(1, table.getTableNumber());
     }
 
     @Test

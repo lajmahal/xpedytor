@@ -11,13 +11,13 @@ import static org.junit.Assert.*;
 /**
  * Created by chakushy on 3/7/16.
  */
-public class OrderRepositoryTest {
+public class OrderRepositoryImplTest {
 
-    private OrderRepository orderRepository;
+    private OrderRepositoryImpl orderRepository;
 
     @Before
     public void setUp() {
-        orderRepository = new OrderRepository();
+        orderRepository = new OrderRepositoryImpl();
     }
 
     @Test
