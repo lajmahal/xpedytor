@@ -11,7 +11,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Created by chakushy on 7/3/16.
  */
-public class TableRepositoryTest {
+public class TableRepositoryImplTest {
     private TableRepository tableRepository;
 
     @Before

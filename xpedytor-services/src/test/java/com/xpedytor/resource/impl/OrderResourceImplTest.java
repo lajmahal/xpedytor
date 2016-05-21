@@ -1,7 +1,7 @@
-package com.xpedytor.resource;
+package com.xpedytor.resource.impl;
 
 import com.xpedytor.model.Order;
-import com.xpedytor.resource.impl.OrderResourceImpl;
+import com.xpedytor.resource.OrderResource;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
