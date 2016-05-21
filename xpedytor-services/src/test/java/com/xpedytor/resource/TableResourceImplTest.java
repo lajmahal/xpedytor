@@ -1,6 +1,7 @@
 package com.xpedytor.resource;
 
 import com.xpedytor.model.Table;
+import com.xpedytor.resource.impl.TableResourceImpl;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;

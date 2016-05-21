@@ -1,8 +1,9 @@
-package com.xpedytor.resource;
+package com.xpedytor.resource.impl;
 
 import com.xpedytor.model.Table;
 import com.xpedytor.repository.TableRepository;
 import com.xpedytor.repository.TableRepositoryFactory;
+import com.xpedytor.resource.TableResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
