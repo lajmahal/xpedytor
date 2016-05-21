@@ -4,7 +4,6 @@ import com.xpedytor.model.Order;
 import com.xpedytor.resource.OrderResource;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.ws.rs.core.Response;
@@ -41,11 +40,7 @@ public class OrderResourceImplTest {
         assertEquals(2, orders.size());
     }
 
-    @Test
-    @Ignore
-    public void test_getAllOrdersNotFound() {
-        // TODO not yet implemented
-    }
+    // TODO implement test that runs getAllOrders and doesn't find anything
 
     @Test
     public void test_getOrder() {

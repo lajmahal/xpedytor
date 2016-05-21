@@ -3,7 +3,6 @@ package com.xpedytor.resource.impl;
 import com.xpedytor.model.Table;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.ws.rs.core.Response;
@@ -36,11 +35,7 @@ public class TableResourceImplTest {
         assertEquals(2, tables.size());
     }
 
-    @Test @Ignore
-    public void test_getAllTablesNotFound() {
-        // TODO implement this
-        // once wired up to a database, clear out all table objects and attempt to get all tables
-    }
+    // TODO implement a test that runs getAllTables and doesn't find anything
 
     @Test
     public void test_getTable() {
